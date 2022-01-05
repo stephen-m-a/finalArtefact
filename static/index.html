@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>BAMEverse Sign In</title>
+        <meta name="google-signin-client_id" content="615425300562-67q9qrdjmm3img5ag0c73tfap9m6qkqj.apps.googleusercontent.com">
+        <script src ="https://apis.google.com/js/platform.js" async defer></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="signin"> 
+        <div class="signin-content">
+                <img src="img/logo-nowording.png" alt="BAMEverse logo" style="width:200px; display: block; margin-left: auto; margin-right: auto;">
+            <h1>
+                Google Sign In
+            </h1>
+            <div class="g-signin2" data-onsuccess="onSignIN"></div>
+            <div class="signin-info" id="content"></div>    
+        </div>
+    </body>
+
+    <script>
+        function onSignIN(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token passed to the backend:
+            // var id_token = googleUser.getAuthResponse().id_token;
+            // console.log("ID Token: " + id_token);
+
+            window.location = './home.html'
+        }
+    </script>
+
+
+</html>
+
+
+
+
+<!-- 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 -->

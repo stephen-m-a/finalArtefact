@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a relevant page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <header>
+        <div id="brand">
+          <img src="img/logo-nowording.png">
+          <a href="/">BAMEverse</a></div>
+        <nav>
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/News">News</a></li>
+            <li><a href="/Staff">Staff</a></li>
+            <li><a href="/Media" >Media</a></li>
+            <li><a href="/Leaders" >Leaders</a></li>
+            <li><a href="/Media" >Testimonials</a></li>
+            <li><a href="/Media" >FAQs</a></li>
+            <li id="signout"><a href="/index.html" onclick="signOut();">Signout</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/News">News</a></li>
+            <li><a href="/Staff">Staff</a></li>
+            <li><a href="/Media" >Media</a></li>
+            <li><a href="/Leaders" >Leaders</a></li>
+            <li><a href="/Media" >Testimonials</a></li>
+            <li><a href="/Media" >FAQs</a></li>
+            <li id="signout"><a href="/index.html">Signout</a></li>
+          </ul>
+        </div>
+      </header>
+        <div class="home-image">
+          <h1>BAMEverse</h1>
+          <p>Connecting BAME Students across the University</p>
+        </div>
+      <!-- </header> -->
+
+      <!-- ********************  NEWS  ********************* -->
+      <section class="news">
+        <div class="content-wrap divider">
+          <h2>News</h2>
+          <p>View selected news below. More information can be found  <a href="https://github.com/stephen-m-a"> here</a> </p>
+
+          <section class="news-item">
+            <img src="images/thumbnail-1.jpg" alt="description of image">
+            <h3>News Heading 1</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+              ad minim veniam, quis nostrud exercitation ullamco laboris"</p>
+            <a class="btn" href="https://www.linkedin.com/in/stephen-mufutau-adams-564263190" target="_blank">View news</a>
+          </section>
+
+          <section class="news-item">
+            <img src="images/thumbnail-2.jpg" alt="description of image">
+            <h3>News Heading 2</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+              minim veniam, quis nostrud exercitation ullamco laboris</p>
+            <a class="btn" href="https://www.linkedin.com/in/stephen-mufutau-adams-564263190" target="_blank">View news</a>
+          </section>
+
+          <section class="news-item">
+            <img src="images/thumbnail-3.jpg" alt="description of image">
+            <h3>News Heading 3</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+              minim veniam, quis nostrud exercitation ullamco laboris</p>
+            <a class="btn" href="https://www.linkedin.com/in/stephen-mufutau-adams-564263190" target="_blank">View news</a>
+          </section>
+          <!-- End of News block. -->
+        </div>
+      </section>
+
+      <!-- ***********************  Staff Profiles  *********************** -->
+      <section class="staff">
+        <div class="content-wrap item-details divider">
+          <h2>Staff Profiles</h2>
+          <p>Optional paragraph for work experience summary. Not a part of the job details.</p>
+
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <!-- Job 1  -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Mrs Jean Michaels</h3>
+              <p>Faculty of Technology</p>
+              <p>September 2021 - Now</p>
+            </div>
+            <div class="job-summary">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                <a href="mailto:email@example.com">email@example.com</a>
+              </p>
+              <p>Optional list:</p>
+              <ul>
+                <li>Created...</li>
+                <li>Lead...</li>
+                <li>Responsible for...</li>
+              </ul>
+            </div>
+          </section>
+
+            <!-- Job 2  -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Mr Adewale Jibowu</h3>
+              <p>Faculty of Business and Law</p>
+              <p>September 2020 - Now</p>
+            </div>
+            <div class="job-summary">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                <a href="mailto:email@example.com">email@example.com</a>
+              </p>
+              <p>Optional list:</p>
+              <ul>
+                <li>Created...</li>
+                <li>Lead...</li>
+                <li>Responsible for...</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- End of Job block. -->
+        </div>
+      </section>
+
+      <!-- ******************  Media ****************** -->
+      <section class="media">
+        <div class="content-wrap item-details">
+          <h2>Media</h2>
+
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          </section>
+
+          <section>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          </section>
+
+          <section>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          </section>
+          <!-- End of School block. -->
+        </div>
+      </section>
+
+      <!-- ***********************  Business Leaders  *********************** -->
+      <section class="staff">
+        <div class="content-wrap item-details divider">
+          <h2>Business Leaders</h2>
+          <p>Optional paragraph for work experience summary. Not a part of the job details.</p>
+
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <!-- Job 1  -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Dr Julie Hughes </h3>
+              <p>Pharmacist</p>
+              <!-- <p>September 2021 - Now</p> -->
+            </div>
+            <div class="job-summary">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                <a href="mailto:email@example.com">email@example.com</a>
+              </p>
+              <p>Optional list:</p>
+              <ul>
+                <li>Created...</li>
+                <li>Lead...</li>
+                <li>Responsible for...</li>
+              </ul>
+            </div>
+          </section>
+
+            <!-- Job 2  -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Mrs Flavilla Fongang</h3>
+              <p>Digital Marketing Executive</p>
+              <!-- <p>September 2020 - Now</p> -->
+            </div>
+            <div class="job-summary">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                <a href="mailto:email@example.com">email@example.com</a>
+              </p>
+              <p>Optional list:</p>
+              <ul>
+                <li>Created...</li>
+                <li>Lead...</li>
+                <li>Responsible for...</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- End of Job block. -->
+        </div>
+      </section>
+
+      <!-- ******************  Student Testimonials ****************** -->
+      <section class="media">
+        <div class="content-wrap item-details">
+          <h2>Testimonials</h2>
+
+          <section>
+            <h3>University of Portsmouth - Portsmouth</h3>
+            <p>BSc (Hons) Software Engineering 2018 - 2022</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+
+          <section>
+            <h3>University of Portsmouth - Portsmouth</h3>
+            <p>BSc (Hons) Software Engineering 2018 - 2022</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+
+          <section>
+            <h3>University of Portsmouth - Portsmouth</h3>
+            <p>BSc (Hons) Software Engineering 2018 - 2022</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <!-- End of Testimonials block. -->
+        </div>
+      </section>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
+
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:email@example.com">email@example.com</a></li>
+            <li><a href="http://yourwebsite.com" target="_blank">link</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

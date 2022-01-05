@@ -1,0 +1,380 @@
+/*
+COLOR PALETTE
+https://coolors.co/27187e-758bfd-aeb8fe-f1f2f6-ff8600
+#27187E persian indigo
+#758BFD cornflower blue
+#AEB8FE maximum blue purple
+#F1F2F6 cultured
+#FF8600 dark orange
+ */
+
+/* Global styles 
+----------------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  width: 300px;
+}
+
+a {
+  color: #ffe66d;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.item-details h3 + p {
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #27187e;
+  padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+.home-image {
+  /* max-width: 800px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0;
+  background-image: url("img/group.jpg");
+  background-size: contain;
+  color: #f7fff7;
+  text-align: center;
+}
+
+/* Profile
+----------------------------------------- */
+
+/* header { */
+/* background-color: #27187e; */
+/* color: #f7fff7; */
+/* background-image: url("img/group.jpg");
+  background-size: contain; */
+/* } */
+
+/* News & Media
+----------------------------------------- */
+
+.news {
+  background-color: #f1f2f6;
+}
+
+.news a {
+  color: #27187e;
+}
+.news .btn {
+  color: #f7fff7;
+  background-color: #aeb8fe;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.news .btn:hover {
+  background-color: rgba(174, 184, 254, 80%);
+}
+
+.news-item {
+  overflow: hidden;
+}
+
+.news-item h3 {
+  margin-top: 0;
+}
+
+/* Staff Profiles & Business Leaders
+----------------------------------------- */
+
+.staff {
+  background-color: #aeb8fe;
+}
+
+/* Media
+----------------------------------------- */
+
+.media {
+  /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+
+.media p {
+  width: 60%;
+}
+
+/* Contact Info
+----------------------------------------- */
+footer {
+  background-color: #758bfd;
+  color: #f7fff7;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.contact-list a {
+  padding: 15px; /* Adding space within the links will help with accessiblity because it will make the click area bigger, more space to tap if the person is using a mobile device  */
+  display: inline-block;
+}
+
+/* Sign In */
+.signin {
+  background-image: url("img/aroundatable.jpg");
+  background-size: contain;
+}
+
+.signin-content {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  margin-left: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+}
+
+.signin-content h1 {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.signin-content div {
+  margin: auto;
+}
+
+.signin-info {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  bottom: 0px;
+}
+
+/* --------- NAV----------- */
+header a {
+  text-decoration: none;
+}
+header {
+  padding: 0 20px;
+  /* margin: 100; */
+  /* box-sizing: border-box; */
+  background-color: #ff8600;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: black;
+}
+
+#brand img {
+  width: 90px;
+  float: left;
+  margin: auto 0;
+}
+
+header ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
+
+header ul a {
+  color: white;
+}
+
+header ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+header ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#signout {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#signout {
+  border: 1px solid #ffe66d;
+}
+
+#signout a {
+  color: black;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: calc(100vh - 50%);
+  /* height: 30px; */
+  width: 100%;
+  background-color: #ff8600;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+/* Responsive
+----------------------------------------- */
+
+@media screen and (min-width: 850px) {
+  header,
+  footer {
+    text-align: center;
+  }
+
+  .news-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    line-height: 1;
+  }
+
+  .contact-list a {
+    padding: 5px;
+  }
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+/* 
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+} */
