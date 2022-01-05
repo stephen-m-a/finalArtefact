@@ -92,118 +92,8 @@ h3 {
   text-align: center;
 }
 
-/* Profile
------------------------------------------ */
-
-/* header { */
-/* background-color: #27187e; */
-/* color: #f7fff7; */
-/* background-image: url("img/group.jpg");
-  background-size: contain; */
-/* } */
-
-/* News & Media
------------------------------------------ */
-
-.news {
-  background-color: #f1f2f6;
-}
-
-.news a {
-  color: #27187e;
-}
-.news .btn {
-  color: #f7fff7;
-  background-color: #aeb8fe;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.news .btn:hover {
-  background-color: rgba(174, 184, 254, 80%);
-}
-
-.news-item {
-  overflow: hidden;
-}
-
-.news-item h3 {
-  margin-top: 0;
-}
-
-/* Staff Profiles & Business Leaders
------------------------------------------ */
-
-.staff {
-  background-color: #aeb8fe;
-}
-
-/* Media
------------------------------------------ */
-
-.media {
-  /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
-  background-size: cover;
-  background-position: top right;
-  padding-bottom: 100px;
-}
-
-.media p {
-  width: 60%;
-}
-
-/* Contact Info
------------------------------------------ */
-footer {
-  background-color: #758bfd;
-  color: #f7fff7;
-}
-
-.contact-list {
-  list-style-type: none;
-  padding: 0px;
-}
-
-.contact-list a {
-  padding: 15px; /* Adding space within the links will help with accessiblity because it will make the click area bigger, more space to tap if the person is using a mobile device  */
-  display: inline-block;
-}
-
-/* Sign In */
-.signin {
-  background-image: url("img/aroundatable.jpg");
-  background-size: contain;
-}
-
-.signin-content {
-  background-color: white;
-  width: 30%;
-  height: 30%;
-  margin-left: 25px;
-  margin-top: 25px;
-  border-radius: 25px;
-}
-
-.signin-content h1 {
-  font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: center;
-}
-
-.signin-content div {
-  margin: auto;
-}
-
-.signin-info {
-  font-size: 40px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: center;
-  bottom: 0px;
-}
-
-/* --------- NAV----------- */
+/*  NAV
+--------------------------------------- */
 header a {
   text-decoration: none;
 }
@@ -318,6 +208,118 @@ header ul li:hover {
 
 .mobile-menu li {
   margin-bottom: 10px;
+}
+
+/* Profile
+----------------------------------------- */
+
+/* header { */
+/* background-color: #27187e; */
+/* color: #f7fff7; */
+/* background-image: url("img/group.jpg");
+  background-size: contain; */
+/* } */
+
+/* News & Media
+----------------------------------------- */
+
+.news {
+  background-color: #f1f2f6;
+}
+
+.news a {
+  color: #27187e;
+}
+.news .btn {
+  color: #f7fff7;
+  background-color: #aeb8fe;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.news .btn:hover {
+  background-color: rgba(174, 184, 254, 80%);
+}
+
+.news-item {
+  overflow: hidden;
+}
+
+.news-item h3 {
+  margin-top: 0;
+}
+
+/* Staff Profiles & Business Leaders
+----------------------------------------- */
+
+.staff {
+  background-color: #aeb8fe;
+}
+
+/* Media
+----------------------------------------- */
+
+.media {
+  /* background-image: url(../images/joanna-kosinska-unsplash.jpg); */
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+
+.media p {
+  width: 60%;
+}
+
+/* Contact Info
+----------------------------------------- */
+footer {
+  background-color: #758bfd;
+  color: #f7fff7;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.contact-list a {
+  padding: 15px; /* Adding space within the links will help with accessiblity because it will make the click area bigger, more space to tap if the person is using a mobile device  */
+  display: inline-block;
+}
+
+/* Sign In
+----------------------------------------- */
+.signin {
+  background-image: url("img/aroundatable.jpg");
+  background-size: contain;
+}
+
+.signin-content {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  margin-left: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+}
+
+.signin-content h1 {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.signin-content div {
+  margin: auto;
+}
+
+.signin-info {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  bottom: 0px;
 }
 
 /* Responsive
