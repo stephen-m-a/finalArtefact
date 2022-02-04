@@ -14,3 +14,40 @@ for (i = 0; i < faq.length; i++) {
         }
     });
 }
+
+function openForm() {
+    document.getElementById("popupForm").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("popupForm").style.display = "none";
+  }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    let modal = document.getElementById('loginPopup');
+    if (event.target == modal) {
+      closeForm();
+    }
+  }
+
+function newFAQ(){
+    var strText = document.getElementById("question").value;          
+    var strText1 = document.getElementById("answer").value;
+    var question = strText 
+    var answer = strText1
+    document.getElementById('questionHeading').textContent = question;
+    document.getElementById('answerContent').textContent = answer;
+    // new
+    window.sessionStorage.setItem('questionStr',JSON.stringify(question));
+}
+
+function retrieveRecords(){ //retrieves items in sessionStorage
+    console.log("retrive records");
+    var records = JSON.parse(window.sessionStorage.getItem('questionStr'));
+    // var paragraph = document.createElement("p");
+    // var infor = document.createTextNode(records);
+    // paragraph.appendChild(infor);
+    // var element = document.getElementById("retrieve");
+    // element.appendChild(paragraph);
+    document.getElementById('questionHeading').textContent = records;
+}

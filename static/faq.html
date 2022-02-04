@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/faq.css">
+    <!-- <script src="/js/faq.js"></script> -->
   </head>
   <body>
     <main>
@@ -21,7 +22,7 @@
           <ul>
             <li><a href="/home.html">Home</a></li>
             <li><a href="/News">News</a></li>
-            <li><a href="/Staff">Staff</a></li>
+            <li><a href="/staff.html">Staff</a></li>
             <li><a href="/Media" >Media</a></li>
             <li><a href="/Leaders" >Leaders</a></li>
             <li><a href="/Media" >Testimonials</a></li>
@@ -81,7 +82,7 @@
                 <hr class="hr-line">
                 <div class="faq-three">
                     <!-- faq question -->
-    <h1 class="faq-page">Popular ethnic grocery shops in Portmsouth?</h1>
+                    <h1 class="faq-page">Popular ethnic grocery shops in Portmsouth?</h1>
                     <!-- faq answer -->
                     <div class="faq-body">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
@@ -90,14 +91,39 @@
                             Perspiciatis, porro!</p>
                     </div>
                 </div>
+                <div class="faq-four">
+                    <h1 class="faq-page" id="questionHeading"></h1>
+                    <div class="faq-body" id="answerContent"></div>
+                </div>
             </section>
             <section class="buttonSection">
                 <div id="mybutton">
-                    <button class="addButton">+</button>
+                    <button class="addButton" onclick="openForm()">+</button>
                 </div>
-            </section>
 
-        </main>
+          <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+              <!-- <form action="/action_page.php" class="formContainer"> -->
+              <form class="formContainer">
+                <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+                <h2>Enter new FAQ</h2>
+                <label for="question">
+                  <strong>Question</strong>
+                </label>
+                <input type="text" id="question" placeholder="The Question" name="question" required>
+                <label for="answer"> 
+                    <strong>Answer</strong>
+                </label>
+                <br>
+                <textarea id="answer" name="answer" rows="4" cols="30"></textarea>
+                </br>
+                <button onclick="newFAQ()" type="button" class="btn">Sumbit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+    </main>
+
         <script src="/js/faq.js"></script>
     </body>
           <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
@@ -115,4 +141,4 @@
               </ul>
             </div>
           </footer>
-</html
+</html>
