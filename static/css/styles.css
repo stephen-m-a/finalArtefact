@@ -380,3 +380,9 @@ footer {
     display: block;
   }
 } */
+
+.page-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+  text-align: center;
+}

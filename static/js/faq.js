@@ -51,3 +51,8 @@ function retrieveRecords(){ //retrieves items in sessionStorage
     // element.appendChild(paragraph);
     document.getElementById('questionHeading').textContent = records;
 }
+
+  // Nav bar toggle
+  function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
