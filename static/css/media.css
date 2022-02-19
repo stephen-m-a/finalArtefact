@@ -1,0 +1,43 @@
+.subnav {
+  width: 30%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.subnav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.subnav li {
+  float: left;
+}
+
+.subnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav li a:hover {
+  background-color: #ff8600;
+}
+
+.active {
+  background-color: #ff8600;
+}
+
+.podcastContent {
+  width: 70%;
+  height: 90%px;
+  margin: auto;
+  display: block;
+}
