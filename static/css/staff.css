@@ -11,7 +11,7 @@ li a {
 
 .schoolName {
   padding: 30px;
-  background: white;
+  background: #f1f1f1;
   color: #2d2f31;
   font-size: 1.3em;
   font-variant: small-caps;
@@ -51,75 +51,106 @@ span::after {
   height: 300px;
 }
 
-.cards {
-  margin: 0 auto;
-  max-width: 900px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  grid-auto-rows: auto;
-  gap: 20px;
-  font-family: sans-serif;
-  padding-top: 30px;
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Yatra+One");
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+*/
+body {
+  background: #f1f1f1;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  background: #f1f1f1;
+  margin-top: 60px;
+  text-align: center;
   padding-bottom: 30px;
 }
 
-.cards * {
-  box-sizing: border-box;
+.wrapper h1 {
+  font-family: "Yatra One", cursive;
+  font-size: 48px;
+  margin-bottom: 25px;
 }
 
-.card__image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  display: block;
-  border-right: 2px solid #333333;
-  border-left: 2px solid #333333;
-  border-bottom: 2px solid #333333;
-}
-
-.card__content {
-  line-height: 1.5;
-  font-size: 0.9em;
-  /* padding: 15px; */
-  padding: 0px 15px 15px 15px;
-  background: #fafafa;
-  border-top: 2px solid #333333;
-  border-right: 2px solid #333333;
-  border-left: 2px solid #333333;
-  border-bottom: 0px;
-}
-
-.card__content > p:first-of-type {
-  margin-top: 0;
-}
-
-.card__content > p:last-of-type {
-  margin-bottom: 0;
-}
-
-.card__info {
-  padding: 15px;
+.our_team {
+  width: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our_team .team_member {
+  width: 250px;
+  margin: 5px;
+  background: #fff;
+  padding: 20px 10px;
+}
+
+.our_team .team_member .member_img {
+  background: #e9e5fa;
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.our_team .team_member .member_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.our_team .team_member h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.our_team .team_member span {
+  font-size: 10px;
+}
+
+.our_team .team_member p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.our_team .team_member .member_img .social_media {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color: #555555;
-  background: #eeeeee;
-  font-size: 0.8em;
-  border-bottom: 2px solid #333333;
-  border-right: 2px solid #333333;
-  border-left: 2px solid #333333;
+  transform: scale(0);
+  transition: all 0.5s ease;
 }
 
-.card__info i {
-  font-size: 0.9em;
-  margin-right: 8px;
+.our_team .team_member .member_img .social_media .item {
+  margin: 0 10px;
 }
 
-.card__link {
-  color: #64968c;
-  text-decoration: none;
+.our_team .team_member .member_img .social_media .fab {
+  color: #8c7ae6;
+  font-size: 20px;
 }
 
-.card__link:hover {
-  text-decoration: underline;
+.our_team .team_member .member_img:hover .social_media {
+  transform: scale(1);
 }
