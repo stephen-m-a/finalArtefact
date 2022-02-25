@@ -12,7 +12,7 @@ let newsAccordion = document.getElementById('newsAccordion');
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
 //xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`, true);
-xhr.open('GET', `https://newsapi.org/v2/everything?q=bame&from=2022-01-23&sortBy=publishedAt&apiKey=36e7f83255ac4be7a8fb3b02792da509`, true);
+xhr.open('GET', `https://newsapi.org/v2/everything?q=bame&from=2022-02-01&sortBy=publishedAt&apiKey=36e7f83255ac4be7a8fb3b02792da509`, true);
 
 // What to do when response is ready
 xhr.onload = function () {
