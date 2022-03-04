@@ -1,21 +1,15 @@
 const express = require('express');
 
+const mongoose = require('mongoose');
+
+const ConnectDb = require('./db/db.js');
+
+ConnectDb();
+// express app
 const app = express();
 
+
 app.use(express.static('static', ));
-// app.use(express.static('static', { extensions: ['index.html'] }));
-
-// app.get('/home', function(req, res){
-//     res.render('home', {value: valueCounter});
-//      console.log('request was made on: /home');
-//  })
- 
-
-
-
-
-
-
 
 const port = process.env.PORT || 8080;
 
