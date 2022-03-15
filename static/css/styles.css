@@ -272,6 +272,26 @@ header ul li:hover {
   width: 60%;
 }
 
+/* More Links
+----------------------------------------- */
+.square:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a.divLink {
+  /* position: absolute; */
+  /* width: 100%;
+  height: 100%; */
+  /* top: 0;
+  left: 0; */
+  text-decoration: none;
+  color: black;
+  /* Makes sure the link doesn't get underlined */
+  /* z-index: 10; */
+}
+
 /* Contact Info
 ----------------------------------------- */
 footer {
@@ -292,12 +312,13 @@ footer {
 /* Sign In
 ----------------------------------------- */
 .signin {
-  background-image: url("img/aroundatable.jpg");
+  background-image: url("../img/aroundatable.jpg");
   background-size: contain;
 }
 
 .signin-content {
   background-color: white;
+  /* background-image: url("img/graduate.jpg"); */
   width: 30%;
   height: 30%;
   margin-left: 25px;
