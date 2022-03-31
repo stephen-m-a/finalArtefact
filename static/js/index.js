@@ -1,7 +1,7 @@
 //Sign in a user
 function onSignIN(googleUser) {
     var profile = googleUser.getBasicProfile();
-    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+    console.log("ID: " + profile.getId()); // Not sent directly to  server!
     console.log('Full Name: ' + profile.getName());
     console.log('Given Name: ' + profile.getGivenName());
     console.log('Family Name: ' + profile.getFamilyName());
@@ -28,3 +28,4 @@ function signOut() {
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
+

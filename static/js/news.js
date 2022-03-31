@@ -1,18 +1,12 @@
-console.log("This is my index js file");
-
 // Initialize the news api parameters
-//let source = 'the-times-of-india';
-//let apiKey = 'd093053d72bc40248998159804e0e67d'
-
-
-
 // Grab the news container
 let newsAccordion = document.getElementById('newsAccordion');
 
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
-//xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`, true);
-xhr.open('GET', `https://newsapi.org/v2/everything?q=bame&from=2022-03-01&sortBy=publishedAt&apiKey=36e7f83255ac4be7a8fb3b02792da509`, true);
+
+xhr.open('GET', `https://newsapi.org/v2/everything?q=bame&from=2022-03-01
+&sortBy=publishedAt&apiKey=36e7f83255ac4be7a8fb3b02792da509`, true);
 
 // What to do when response is ready
 xhr.onload = function () {
@@ -32,7 +26,6 @@ xhr.onload = function () {
                                 </button>
                                 </h2>
                             </div>
-
                             <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#newsAccordion">
                                 <div class="card-body"> ${element["content"]}. <a href="${element['url']}" target="_blank" >Read more here</a>  </div>
                             </div>
@@ -42,7 +35,7 @@ xhr.onload = function () {
         newsAccordion.innerHTML = newsHtml;
     }
     else {
-        console.log("Some error occured")
+        console.log("Error occured")
     }
 }
 
