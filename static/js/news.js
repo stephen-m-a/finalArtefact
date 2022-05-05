@@ -5,7 +5,7 @@ let newsAccordion = document.getElementById('newsAccordion');
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
 
-xhr.open('GET', `https://newsapi.org/v2/everything?q=bame&from=2022-03-15
+xhr.open('GET', `https://newsapi.org/v2/everything?q=bame&from=2022-05-01
 &sortBy=publishedAt&apiKey=36e7f83255ac4be7a8fb3b02792da509`, true);
 
 // What to do when response is ready

@@ -204,6 +204,7 @@ header ul li:hover {
   /* height: 30px; */
   width: 100%;
   background-color: #ff8600;
+  z-index: 999;
 }
 
 .mobile-menu li {
